@@ -53,8 +53,9 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
-```
-Your answer...
+By adding a "customer address" table with three columns, we can:
+1- use an FK to connect with customer_id from the "customer" table, thus overwriting if needed.
+2- store old and new customer addresses in new columns.
 ```
 
 ***
